@@ -129,7 +129,9 @@ body > .el-container {
 .router-title span.active{
   background-color:#fff;
   color:#409EFF;
-  line-height:40px;
+  line-height:39px;
+  position:relative;
+  top:1px;
 }
 
 .router-title span.active i{

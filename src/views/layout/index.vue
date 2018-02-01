@@ -178,7 +178,7 @@ export default{
       self.hasRoute = false
     },
     routeDelete (index) {
-      if (index > 1) {
+      if (index > 0) {
         this.routeList.splice(index, 1)
         let routeIndex = index - 1
         this.$router.push(this.routeList[routeIndex].path)
