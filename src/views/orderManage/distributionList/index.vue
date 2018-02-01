@@ -15,7 +15,7 @@
               <el-form-item label="姓名：">
                 <el-input placeholder="请输入"></el-input>
               </el-form-item>
-              <el-form-item label="物流编号：">
+              <el-form-item label="物流单号：">
                 <el-input placeholder="请输入"></el-input>
               </el-form-item>
             </el-col>

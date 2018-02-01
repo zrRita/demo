@@ -95,6 +95,10 @@
             label="药品编码">
           </el-table-column>
           <el-table-column
+            prop="count"
+            label="数量">
+          </el-table-column>
+          <el-table-column
             prop="unit"
             label="单位">
           </el-table-column>
@@ -120,6 +124,7 @@ export default {
         drugName: '山姜',
         eCode: '123',
         drugCode: '012354122',
+        count: '300',
         unit: '公斤',
         specialDecoction: '',
         isOpen: '启用'
@@ -127,6 +132,7 @@ export default {
         drugName: '金银花',
         eCode: '4334',
         drugCode: '5346547657',
+        count: '500',
         unit: '公斤',
         specialDecoction: '',
         isOpen: '启用'
@@ -134,6 +140,7 @@ export default {
         drugName: '山药',
         eCode: '23423',
         drugCode: '43655465',
+        count: '350',
         unit: '公斤',
         specialDecoction: '',
         isOpen: '启用'
@@ -141,6 +148,7 @@ export default {
         drugName: '薄荷',
         eCode: '31232',
         drugCode: '56565767',
+        count: '500',
         unit: '公斤',
         specialDecoction: '',
         isOpen: '启用'

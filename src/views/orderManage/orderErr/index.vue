@@ -48,7 +48,7 @@
 
         <div class="list-normal-btn-group">
           <el-row>
-            <el-col :span="12" :offset="12">
+            <el-col :span="24">
               <div class="list-normal-btn-right" style="text-align: right">
                 <el-form-item>
                   <el-button >

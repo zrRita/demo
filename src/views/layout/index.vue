@@ -40,35 +40,35 @@
                   <i class="el-icon-location"></i>
                   <span>{{order.name}}</span>
                   </template>
-                  <el-menu-item v-for="item in order.routeList " :key="item.$index" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
+                  <el-menu-item v-for="item in order.routeList " :key="item.id" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
                 </el-submenu>
                 <el-submenu index="2">
                   <template slot="title">
                     <i class="el-icon-menu"></i>
                     <span>{{base.name}}</span>
                   </template>
-                  <el-menu-item v-for="item in base.routeList " :key="item.$index" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
+                  <el-menu-item v-for="item in base.routeList " :key="item.id" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
                 </el-submenu>
                 <el-submenu index="3">
                   <template slot="title">
                     <i class="el-icon-location-outline"></i>
                     <span>{{storage.name}}</span>
                   </template>
-                  <el-menu-item v-for="item in storage.routeList " :key="item.$index" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
+                  <el-menu-item v-for="item in storage.routeList " :key="item.id" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
                 </el-submenu>
                 <el-submenu index="4">
                   <template slot="title">
                     <i class="el-icon-news"></i>
                     <span>{{finance.name}}</span>
                   </template>
-                  <el-menu-item v-for="item in finance.routeList " :key="item.$index" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
+                  <el-menu-item v-for="item in finance.routeList " :key="item.id" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
                 </el-submenu>
                 <el-submenu index="5">
                   <template slot="title">
                     <i class="el-icon-setting"></i>
                     <span>{{set.name}}</span>
                   </template>
-                  <el-menu-item v-for="item in set.routeList " :key="item.$index" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
+                  <el-menu-item v-for="item in set.routeList " :key="item.id" :index="item.index" :class="[$route.path == item.path ? 'is-active' : '']" @click="menuSwitchRouter(item.path, item.name)">{{item.name}}</el-menu-item>
                 </el-submenu>
               </el-menu>
             </el-col>
@@ -156,7 +156,7 @@ export default{
     }
   },
   created () {
-    console.log(this.$router)
+
   },
   methods: {
     switchRouter (path) {
@@ -164,7 +164,7 @@ export default{
     },
     menuSwitchRouter (path, name) {
       this.$router.push(path)
-      this.routeList.forEach(function (item, i) {
+      this.routeList.forEach(function (item) {
         self.hasRoute = (item.path === path) || self.hasRoute
       })
       if (!self.hasRoute) {
