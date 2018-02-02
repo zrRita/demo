@@ -5,7 +5,7 @@
         <el-row >
           <el-col :span="12">
             <div class="logo">
-              <img src="./imgs/logo.png" alt="">
+              <img src="./imgs/demo.png" alt="">
               煎药管理系统
             </div>
           </el-col>
