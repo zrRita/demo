@@ -169,7 +169,7 @@ export default new Router({
           }
         },
         {
-          path: '/balanceManage',
+          path: '/drugPrice',
           name: 'DrugPrice,',
           component: DrugPrice,
           meta: {

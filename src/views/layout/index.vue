@@ -5,8 +5,8 @@
         <el-row >
           <el-col :span="12">
             <div class="logo">
-              <img src="./imgs/demo.png" alt="">
-              煎药管理系统
+              <img src="./imgs/logo.png" alt="">
+              诗远启煎药管理系统
             </div>
           </el-col>
           <el-col :span="12" style="text-align: right" class="header-right">
@@ -136,7 +136,7 @@ export default{
         name: '财务模块',
         routeList: [
           {id: 1, index: '4-1', name: '结算方管理', path: '/balanceManage'},
-          {id: 2, index: '4-2', name: '药品价格', path: '/balanceManage'},
+          {id: 2, index: '4-2', name: '药品价格', path: '/drugPrice'},
           {id: 3, index: '4-3', name: '用药统计', path: '/pharmacyCount'},
           {id: 4, index: '4-4', name: '对账结算', path: '/settleAccount'}
         ]
